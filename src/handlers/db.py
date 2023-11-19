@@ -1,5 +1,5 @@
 from pymongo import MongoClient
-from src.config.config import MONGODB_URL, cfg_mongo
+from config.config import MONGODB_URL, cfg_mongo
 
 db = cfg_mongo['db_name']
 

@@ -4,8 +4,8 @@ from aiogram.types import BotCommand
 from handlers import dp
 from handlers.users import purchase
 from loader import bot
-from src.handlers import fsm
-from src.handlers.admin import admin
+from handlers import fsm
+from handlers.admin import admin
 
 
 async def set_default_commands():

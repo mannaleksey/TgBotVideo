@@ -1,8 +1,8 @@
 from handlers.fsm import *
 from loader import dp, bot
-from src.handlers.db import db_profile_access, db_profile_exist, db_profile_update_one, db_profile_exist_usr, db_profile_get_username, db_profile_insert_one
+from handlers.db import db_profile_access, db_profile_exist, db_profile_update_one, db_profile_exist_usr, db_profile_get_username, db_profile_insert_one
 
-from src.config.config import cfg, cfg_to_change
+from config.config import cfg, cfg_to_change
 
 errormessage = cfg_to_change['error_message']
 sub = cfg['sub']
