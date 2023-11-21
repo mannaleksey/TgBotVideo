@@ -113,8 +113,6 @@ async def answer(message: Message):
     if message.chat.type != 'private':
         return
     await message.reply('Я тебя не понимаю.')
-    await message.answer_video('BAACAgIAAxkBAAM8ZVfE-WeWsHCHFooSGoifZzaEanYAAv80AAJPmMBK9cp5CbUuPXgzBA')
-    await message.answer_video('BAACAgIAAxkBAAIDHmVaFFp_gyjcBJVVJXp9v7QlaBW3AALfNQACKDPRSq502_h-6OZPMwQ')
 
 
 def register_handler_client():
