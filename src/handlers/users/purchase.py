@@ -29,7 +29,7 @@ async def subscription(message: Message):
 async def course(message: Message):
     uid = message.from_user.id
     if db_profile_access(uid) >= 0:
-        video_data = db_get_video_from_id('1')
+        video_data = db_get_video_from_id(1)
         await message.answer_video(
             video=video_data['file_id'],
             caption=f"Видео №{video_data['_id']}\n{video_data['description']}",
@@ -113,6 +113,8 @@ async def answer(message: Message):
     if message.chat.type != 'private':
         return
     await message.reply('Я тебя не понимаю.')
+    await message.answer_video('BAACAgIAAxkBAAM8ZVfE-WeWsHCHFooSGoifZzaEanYAAv80AAJPmMBK9cp5CbUuPXgzBA')
+    await message.answer_video('BAACAgIAAxkBAAIDHmVaFFp_gyjcBJVVJXp9v7QlaBW3AALfNQACKDPRSq502_h-6OZPMwQ')
 
 
 def register_handler_client():
